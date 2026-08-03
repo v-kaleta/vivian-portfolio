@@ -11,7 +11,7 @@ const NAV_ITEMS = [
   { id: 'about', img: '/icons/about.png', label: 'about' },
   { id: 'links', img: '/icons/links.png', label: 'links' },
   { id: 'work', img: '/icons/work.png', label: 'work' },
-  { id: 'contact', img: '/icons/contact.png', label: 'contact' },
+  { id: 'contact', img: '/icons/contact.png', label: 'socials' },
 ];
 
 const PROJECTS = [
@@ -169,7 +169,7 @@ export default function App() {
           <div className="home-body">
             <div className="avatar-wrap">
   <TypedHeading />
-  <p className="tagline">i like to research, build, reiterate, and build more!</p>
+  <p className="tagline">I like to develop and launch tools!</p>
   <p className="tagline" style={{ marginTop: 8 }}>Feel free to email me at <span style={{ color: 'var(--accent-strong)' }}>vivian.kaleta &lt;at&gt; yale.edu</span></p>
 </div>
 
@@ -399,7 +399,7 @@ export default function App() {
 
       <Window
         id="contact"
-        title="contact"
+        title="socials"
         className="window-contact"
         isOpen={!!openWindows.contact}
         zIndex={zIndexes.contact || 40}

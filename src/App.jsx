@@ -29,6 +29,13 @@ const PROJECTS = [
     link: 'https://federated-diabetes-demo.vercel.app',
     icon: '🧬',
   },
+  {
+    title: 'NDA Review Engine',
+    tagline: 'A customizable, clause-level NDA redlining engine — with a real backend API.',
+    description: 'Upload a non-disclosure agreement, define the rules your firm reviews against, and get back a genuine Word tracked-changes redline plus a signed execution copy. Runs fully client-side, or call the same engine as a real serverless API with client SDKs for Node.js and Python.',
+    link: 'https://nda-review-engine.vercel.app',
+    icon: '⚖️',
+  },
 ];
 
 const TOOLS_AND_DEV = ['Cursor', 'GitHub Copilot', 'Claude Code', 'Python', 'C++', 'JavaScript', 'HTML/CSS', 'React', 'SQL', 'Databricks', 'Salesforce', 'Figma', 'Adobe Illustrator', 'Adobe Photoshop'];

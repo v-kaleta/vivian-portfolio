@@ -14,16 +14,14 @@ const NAV_ITEMS = [
   { id: 'contact', img: '/icons/contact.png', label: 'contact' },
 ];
 
-const EXPERIENCE = [
-  { role: 'Project Management Intern', org: 'Elevate Energy, Chicago', date: 'Jun 2026–Present', blurb: 'Modeled a new energy-financing pilot and automated Salesforce-to-Excel reporting across 80+ properties.' },
-  { role: 'Private Equity Summer Analyst', org: 'Benford Capital Partners, Chicago', date: 'May–Jun 2026', blurb: 'Owned an AI-assisted NDA review product end-to-end, cutting turnaround from ~2.5 hours to ~2 minutes per NDA.' },
-  { role: 'Research Assistant', org: 'Yale Department of Economics', date: 'Feb 2025–Present', blurb: 'Built a Python pipeline integrating 35 years of European macro data for Delphi Economic Forum X, with Prof. Costas Meghir.' },
-  { role: 'Research Assistant', org: 'Yale School of Management', date: 'Jan 2025–Present', blurb: 'Coordinating a 10-year RCT enrolling 300 low-income pregnant women studying maternal and child outcomes.' },
-  { role: 'Summer Analyst', org: 'Commercial Club of Chicago', date: 'May–Sept 2025', blurb: 'Built an AI query layer and geospatial pipeline for a citywide crime heatmap; presented findings to NORC and BCG.' },
-  { role: 'Founder', org: 'FinYay', date: 'Mar 2026–Present', blurb: 'K-6 financial literacy app with a standards-aligned curriculum, developed with Prof. Brian Scassellati.' },
-  { role: 'Engineer', org: 'Federated Learning for Diabetes Prediction', date: 'Jan–May 2026', blurb: 'Research with Prof. Hoon Cho on privacy-preserving federated learning across simulated patient data.' },
-  { role: 'Founder', org: 'Money Mastermind', date: 'Aug 2022–Sept 2024', blurb: 'Financial-literacy card game piloted across Chicago schools, reaching a partnership with Junior Achievement and Chicago Public Schools.' },
-  { role: 'Author & Illustrator', org: 'Talk To Me Mo & Making Cents!', date: 'Aug 2023–Sept 2024', blurb: "Two children's books distributed via Amazon and Barnes & Noble." },
+const PROJECTS = [
+  {
+    title: 'CPD Query Console',
+    tagline: "A natural-language interface for Chicago's public crime data.",
+    description: "Type a question in plain English and it's parsed into a structured query, validated, and run live against Chicago's crime feed — rendered as an interactive heatmap with a vacant-lots layer and time/type/area aggregations.",
+    link: 'https://cpd-query-console.vercel.app',
+    icon: '🗺️',
+  },
 ];
 
 const TOOLS_AND_DEV = ['Cursor', 'GitHub Copilot', 'Claude Code', 'Python', 'C++', 'JavaScript', 'HTML/CSS', 'React', 'SQL', 'Databricks', 'Salesforce', 'Figma', 'Adobe Illustrator', 'Adobe Photoshop'];
@@ -363,17 +361,24 @@ export default function App() {
   </div>
 </div>
 
-<p className="section-label" style={{ marginTop: 20 }}>experience</p>
-<div className="exp-list">
-          {EXPERIENCE.map((exp) => (
-            <div className="exp-item" key={`${exp.role}-${exp.org}`}>
-              <div className="exp-top">
-                <span className="exp-role">{exp.role}</span>
-                <span className="exp-date">{exp.date}</span>
+<p className="section-label" style={{ marginTop: 20 }}>what I&apos;ve built</p>
+<div className="project-grid">
+          {PROJECTS.map((proj) => (
+            <a
+              className="project-card"
+              key={proj.title}
+              href={proj.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="project-icon">{proj.icon}</div>
+              <div className="project-title">
+                {proj.title}
+                <span className="project-link-arrow">↗</span>
               </div>
-              <div className="exp-org">{exp.org}</div>
-              <p>{exp.blurb}</p>
-            </div>
+              <p className="project-tagline">{proj.tagline}</p>
+              <p className="project-desc">{proj.description}</p>
+            </a>
           ))}
         </div>
       </Window>

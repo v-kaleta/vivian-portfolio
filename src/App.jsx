@@ -22,6 +22,13 @@ const PROJECTS = [
     link: 'https://cpd-query-console.vercel.app',
     icon: '🗺️',
   },
+  {
+    title: 'Federated Diabetes Prediction',
+    tagline: 'Privacy-preserving learning across heterogeneous, multi-site healthcare data.',
+    description: 'Local, federated, and centralized models are trained and benchmarked live in the browser on the Pima Indians Diabetes dataset, split across three simulated hospitals by BMI to create realistic non-IID heterogeneity — reproducing a CPSC 4560 investigation with nothing precomputed.',
+    link: 'https://federated-diabetes-demo.vercel.app',
+    icon: '🧬',
+  },
 ];
 
 const TOOLS_AND_DEV = ['Cursor', 'GitHub Copilot', 'Claude Code', 'Python', 'C++', 'JavaScript', 'HTML/CSS', 'React', 'SQL', 'Databricks', 'Salesforce', 'Figma', 'Adobe Illustrator', 'Adobe Photoshop'];

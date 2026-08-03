@@ -162,7 +162,7 @@ export default function App() {
           <div className="home-body">
             <div className="avatar-wrap">
   <TypedHeading />
-  <p className="tagline">i like to research, build, reiterate, and build more!</p>
+  <p className="tagline">I like to develop and launch tools!</p>
   <p className="tagline" style={{ marginTop: 8 }}>Feel free to email me at <span style={{ color: 'var(--accent-strong)' }}>vivian.kaleta &lt;at&gt; yale.edu</span></p>
 </div>
 

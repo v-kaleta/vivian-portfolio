@@ -25,7 +25,7 @@ const PROJECTS = [
   {
     title: 'Federated Diabetes Prediction',
     tagline: 'Privacy-preserving learning across heterogeneous, multi-site healthcare data.',
-    description: 'Local, federated, and centralized models are trained and benchmarked live in the browser on the Pima Indians Diabetes dataset, split across three simulated hospitals by BMI to create realistic non-IID heterogeneity — reproducing a CPSC 4560 investigation with nothing precomputed.',
+    description: 'Local, federated, and centralized models are trained and benchmarked live in the browser on the Pima Indians Diabetes dataset, split across three simulated hospitals by BMI to create realistic non-IID heterogeneity.',
     link: 'https://federated-diabetes-demo.vercel.app',
     icon: '🧬',
   },

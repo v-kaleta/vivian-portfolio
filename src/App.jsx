@@ -11,7 +11,7 @@ const NAV_ITEMS = [
   { id: 'about', img: '/icons/about.png', label: 'about' },
   { id: 'links', img: '/icons/links.png', label: 'links' },
   { id: 'work', img: '/icons/work.png', label: 'work' },
-  { id: 'contact', img: '/icons/contact.png', label: 'contact' },
+  { id: 'contact', img: '/icons/contact.png', label: 'socials' },
 ];
 
 const PROJECTS = [
@@ -392,7 +392,7 @@ export default function App() {
 
       <Window
         id="contact"
-        title="contact"
+        title="socials"
         className="window-contact"
         isOpen={!!openWindows.contact}
         zIndex={zIndexes.contact || 40}

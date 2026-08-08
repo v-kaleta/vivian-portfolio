@@ -36,6 +36,13 @@ const PROJECTS = [
     link: 'https://nda-review-engine.vercel.app',
     icon: '⚖️',
   },
+  {
+  title: 'Money Mastermind',
+  tagline: 'A financial literacy card game reaching 150,000+ students.',
+  description: 'A physical card game teaching kids financial decision-making, then built through multiple prototypes and tested across Chicago Public Schools. Now integrated into Junior Achievement\'s Middle School "Economics for Success" program and evolving into a blended physical-plus-digital curriculum for grades 4–6.',
+  link: 'https://money-mastermind.vercel.app',
+  icon: '💰',
+},
 ];
 
 const TOOLS_AND_DEV = ['Cursor', 'GitHub Copilot', 'Claude Code', 'Python', 'C++', 'JavaScript', 'HTML/CSS', 'React', 'SQL', 'Databricks', 'Salesforce', 'Figma', 'Adobe Illustrator', 'Adobe Photoshop'];

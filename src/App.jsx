@@ -43,6 +43,13 @@ const PROJECTS = [
   link: 'https://money-mastermind.vercel.app',
   icon: '💰',
 },
+{
+    title: 'FinYay',
+    tagline: 'Interactive, teacher-led financial literacy platform for grades 4–6 — "Khan Academy for financial literacy."',
+    description: 'The digital evolution of Money Mastermind: a teacher-led classroom experience projected on one shared screen, where students join with a daily code and tap pre-assigned icon tiles to make decisions across six units — Earning, Spending, Saving, Investing, Managing Credit, and Managing Risk. AI batch-generates each class\'s sessions ahead of time, including branching content that adapts to how the class actually voted, so no AI ever talks to kids live. Curriculum is standards-mapped to national Jump$tart/CEE and Illinois ISBE frameworks.',
+    link: null,
+    icon: '🎓',
+  },
 ];
 
 const TOOLS_AND_DEV = ['Cursor', 'GitHub Copilot', 'Claude Code', 'Python', 'C++', 'JavaScript', 'HTML/CSS', 'React', 'SQL', 'Databricks', 'Salesforce', 'Figma', 'Adobe Illustrator', 'Adobe Photoshop'];
@@ -384,23 +391,23 @@ export default function App() {
 
 <p className="section-label" style={{ marginTop: 20 }}>what I&apos;ve built</p>
 <div className="project-grid">
-          {PROJECTS.map((proj) => (
-            <a
-              className="project-card"
-              key={proj.title}
-              href={proj.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="project-icon">{proj.icon}</div>
-              <div className="project-title">
-                {proj.title}
-                <span className="project-link-arrow">↗</span>
-              </div>
-              <p className="project-tagline">{proj.tagline}</p>
-              <p className="project-desc">{proj.description}</p>
-            </a>
-          ))}
+          {PROJECTS.map((proj) => {
+            const CardTag = proj.link ? 'a' : 'div';
+            const linkProps = proj.link
+              ? { href: proj.link, target: '_blank', rel: 'noopener noreferrer' }
+              : {};
+            return (
+              <CardTag className="project-card" key={proj.title} {...linkProps}>
+                <div className="project-icon">{proj.icon}</div>
+                <div className="project-title">
+                  {proj.title}
+                  {proj.link && <span className="project-link-arrow">↗</span>}
+                </div>
+                <p className="project-tagline">{proj.tagline}</p>
+                <p className="project-desc">{proj.description}</p>
+              </CardTag>
+            );
+          })}
         </div>
       </Window>
 

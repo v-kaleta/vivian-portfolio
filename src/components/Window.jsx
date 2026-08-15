@@ -1,9 +1,18 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import Draggable from 'react-draggable';
 
 export default function Window({ id, title, isOpen, zIndex, position, onClose, onFocus, onDrag, className = '', children }) {
   const nodeRef = useRef(null);
   const previouslyFocused = useRef(null);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia('(hover: none) and (pointer: coarse)');
+    setIsTouchDevice(mq.matches);
+    const handler = (e) => setIsTouchDevice(e.matches);
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
+  }, []);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -50,6 +59,7 @@ export default function Window({ id, title, isOpen, zIndex, position, onClose, o
   return (
     <Draggable
       nodeRef={nodeRef}
+      handle={isTouchDevice ? '.window-titlebar' : undefined}
       cancel=".close-btn, a, button, input, textarea, select"
       position={{ x: position.left, y: position.top }}
       onStart={() => onFocus(id)}

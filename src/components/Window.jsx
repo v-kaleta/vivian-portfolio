@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useLayoutEffect, useState } from 'react';
 import Draggable from 'react-draggable';
 
 export default function Window({ id, title, isOpen, zIndex, position, onClose, onFocus, onDrag, className = '', children }) {
@@ -13,6 +13,22 @@ export default function Window({ id, title, isOpen, zIndex, position, onClose, o
     mq.addEventListener('change', handler);
     return () => mq.removeEventListener('change', handler);
   }, []);
+
+  // on mobile, open every window centered on the actual viewport instead of
+  // using the desktop cascade offsets (which are fixed pixel values tuned
+  // for wide screens and push windows off-screen on a phone)
+  useLayoutEffect(() => {
+    if (!isOpen) return;
+    const isMobile = window.innerWidth < 700;
+    if (!isMobile) return;
+    const node = nodeRef.current;
+    if (!node) return;
+
+    const rect = node.getBoundingClientRect();
+    const centeredLeft = Math.max(8, (window.innerWidth - rect.width) / 2);
+    const centeredTop = Math.max(16, (window.innerHeight - rect.height) / 2);
+    onDrag(id, { left: centeredLeft, top: centeredTop });
+  }, [isOpen, id, onDrag]);
 
   useEffect(() => {
     if (!isOpen) return;

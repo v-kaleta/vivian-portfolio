@@ -246,8 +246,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: min(1100px, 92vw);
-  max-height: 88vh;
+  width: min(900px, 88vw);
+  max-height: 78vh;
   display: flex;
   flex-direction: column;
   background: var(--surface);
@@ -298,6 +298,13 @@ body {
   flex-shrink: 0;
 }
 .window-titlebar:active { cursor: grabbing; }
+
+.window {
+  cursor: grab;
+}
+.window:active {
+  cursor: grabbing;
+}
 
 .window-title {
   font-family: 'Space Mono', monospace;

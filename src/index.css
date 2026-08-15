@@ -185,12 +185,8 @@ body {
 }
 
 .icon-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 18px;
-  max-width: 640px;
-  margin: 0 auto;
+  position: relative;
+  z-index: 200;
 }
 
 .nav-icon {

@@ -41,7 +41,7 @@ export default function Window({ id, title, isOpen, zIndex, position, onClose, o
     const focusable = node?.querySelectorAll(
       'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])'
     );
-    (focusable?.[0] || node)?.focus();
+    (focusable?.[0] || node)?.focus({ preventScroll: true });
 
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') {

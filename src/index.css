@@ -472,6 +472,26 @@ body {
   .nav-icon-glyph { width: 56px; height: 56px; font-size: 22px; }
 }
 
+@media (max-width: 700px) {
+  .skills-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .writing-entry-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding-right: 0;
+  }
+
+  .writing-entry-tag {
+    position: static;
+    display: block;
+    margin-top: 2px;
+  }
+}
+
+
 .about-header {
   display: flex;
   flex-direction: column;

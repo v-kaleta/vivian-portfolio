@@ -28,7 +28,7 @@ export default function Window({ id, title, isOpen, zIndex, position, onClose, o
     const centeredLeft = Math.max(8, (window.innerWidth - rect.width) / 2);
     const centeredTop = Math.max(16, (window.innerHeight - rect.height) / 2);
     onDrag(id, { left: centeredLeft, top: centeredTop });
-  }, [isOpen, id, onDrag]);
+  }, [isOpen, id]);
 
   useEffect(() => {
     if (!isOpen) return;

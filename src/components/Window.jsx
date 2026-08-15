@@ -50,8 +50,7 @@ export default function Window({ id, title, isOpen, zIndex, position, onClose, o
   return (
     <Draggable
       nodeRef={nodeRef}
-      handle=".window-titlebar"
-      cancel=".close-btn"
+      cancel=".close-btn, a, button, input, textarea, select"
       position={{ x: position.left, y: position.top }}
       onStart={() => onFocus(id)}
       onDrag={(e, data) => onDrag(id, { top: data.y, left: data.x })}

@@ -467,42 +467,28 @@ body {
 }
 
 @media (max-width: 700px) {
-  .skills-columns {
-    grid-template-columns: 1fr;
-  }
-
-  .writing-entry-top {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-    padding-right: 0;
-  }
-
-  .writing-entry-tag {
-    position: static;
-    display: block;
-    margin-top: 2px;
-  }
-
   .about-header {
     position: static;
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
+    gap: 2px;
   }
 
   .about-photo {
-    width: 96px;
-    height: 96px;
-    margin-bottom: 8px;
+    width: 64px;
+    height: 64px;
+    border-width: 2px;
+    margin-bottom: 4px;
   }
 
   .about-name {
-    font-size: 1.8rem;
-    margin: 0 0 4px;
+    font-size: 1.3rem;
+    margin: 0 0 2px;
   }
 
   .about-subtitle {
-    font-size: 0.95rem;
+    font-size: 0.8rem;
+    margin: 0;
   }
 }
 

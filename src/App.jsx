@@ -280,7 +280,7 @@ export default function App() {
   <div className="writing-entry-top">
     <span className="writing-entry-date">/2025</span>
     <a className="writing-entry-title" href="https://www.arnoldventures.org/stories/randomized-controlled-trial-of-123-moms-to-reduce-maternal-depression-among-new-mothers-and-improve-early-childhood-cognitive-development" target="_blank" rel="noopener noreferrer">123-MOMS: RCT Evaluation of Maternal Mental Health &amp; Child Development</a>
-  <span className="writing-entry-tag">Yale School of Management & Medicine</span>
+  <span className="writing-entry-tag">Yale SOM &amp; Medicine</span>
     </div>
   <p className="writing-entry-desc">123-MOMS: RCT evaluation of a three-phase intervention on maternal mental health and child development to lay the foundations for economic opportunity and wellbeing</p>
   

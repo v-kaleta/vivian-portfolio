@@ -470,28 +470,28 @@ body {
   .about-header {
     position: static;
     padding: 0;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     gap: 2px;
   }
 
   .about-photo {
-    width: 64px;
-    height: 64px;
+    width: 56px;
+    height: 56px;
     border-width: 2px;
     margin-bottom: 4px;
   }
 
   .about-name {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     margin: 0 0 2px;
   }
 
   .about-subtitle {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    line-height: 1.3;
     margin: 0;
   }
 }
-
 
 .about-header {
   display: flex;

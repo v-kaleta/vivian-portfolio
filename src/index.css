@@ -632,8 +632,8 @@ body {
 .writing-entry-top {
   display: flex;
   align-items: baseline;
-  gap: 16px;
-  padding-right: 70px;
+  flex-wrap: wrap;
+  gap: 6px 16px;
 }
 
 .writing-entry-date {
@@ -696,15 +696,13 @@ body {
 }
 
 .writing-entry-tag {
-  position: absolute;
-  top: 0;
-  right: 0;
+  margin-left: auto;
+  flex-shrink: 0;
+  white-space: nowrap;
   font-family: 'Space Mono', monospace;
   font-size: 0.75rem;
   font-weight: 600;
-  color: var(--text);
 }
-
 .skills-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;

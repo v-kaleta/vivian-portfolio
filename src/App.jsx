@@ -217,7 +217,7 @@ export default function App() {
   onDrag={handleDrag}
 >
         <div className="about-header">
-          <img className="about-photo" src="/images/about-photo.jpg" alt="Vivian Kaleta" />
+        <img className="about-photo" src="/images/about-photo.jpg" alt="Vivian Kaleta" />
           <div>
             <h2 className="about-name">Vivian Kaleta</h2>
             <p className="about-subtitle">Yale University '28</p>
@@ -270,18 +270,20 @@ export default function App() {
     <div className="writing-entry-top">
       <span className="writing-entry-date">/2025</span>
       <a className="writing-entry-title" href="https://www.nber.org/papers/w34602" target="_blank" rel="noopener noreferrer">Human Capital and Development</a>
+    <span className="writing-entry-tag">Yale Department of Economics</span>
     </div>
     <p className="writing-entry-desc">National Bureau of Economic Research paper examining how human capital drives innovation and economic growth and how targeted education interventions can mitigate persistent poverty traps.
 </p>
-    <span className="writing-entry-tag">Yale Department of Economics</span>
+    
   </div>
   <div className="writing-entry">
   <div className="writing-entry-top">
     <span className="writing-entry-date">/2025</span>
     <a className="writing-entry-title" href="https://www.arnoldventures.org/stories/randomized-controlled-trial-of-123-moms-to-reduce-maternal-depression-among-new-mothers-and-improve-early-childhood-cognitive-development" target="_blank" rel="noopener noreferrer">123-MOMS: RCT Evaluation of Maternal Mental Health &amp; Child Development</a>
-  </div>
-  <p className="writing-entry-desc">123-MOMS: RCT evaluation of a three-phase intervention on maternal mental health and child development to lay the foundations for economic opportunity and wellbeing</p>
   <span className="writing-entry-tag">Yale School of Management & Medicine</span>
+    </div>
+  <p className="writing-entry-desc">123-MOMS: RCT evaluation of a three-phase intervention on maternal mental health and child development to lay the foundations for economic opportunity and wellbeing</p>
+  
 </div>
 </div>
 
@@ -291,18 +293,20 @@ export default function App() {
       <div className="writing-entry-top">
         <span className="writing-entry-date">/2023</span>
         <a className="writing-entry-title" href="https://www.amazon.com/dp/B0C1J1RJHT" target="_blank" rel="noopener noreferrer">Talk To Me Mo</a>
-      </div>
-      <p className="writing-entry-desc">Children's book illustrating how early intervention and nonviolent conflict resolution can help disrupt cycles of gun violence, available on Amazon & Barnes & Noble Stores.</p>
       <span className="writing-entry-tag">Published Literary</span>
+    </div>
+      <p className="writing-entry-desc">Children's book illustrating how early intervention and nonviolent conflict resolution can help disrupt cycles of gun violence, available on Amazon & Barnes & Noble Stores.</p>
+      
     </div>
     
     <div className="writing-entry">
       <div className="writing-entry-top">
         <span className="writing-entry-date">/2023</span>
         <a className="writing-entry-title" href="https://www.amazon.com/dp/B0D1P6T6KY" target="_blank" rel="noopener noreferrer">Making Cents!</a>
-      </div>
-      <p className="writing-entry-desc">Activity-based children's workbook translating complex financial concepts into accessible lessons, equipping elementary and middle school students with foundational skills in saving, budgeting, entrepreneurship, and financial decision-making, available on Amazon.</p>
       <span className="writing-entry-tag">Published Literary</span>
+    </div>
+      <p className="writing-entry-desc">Activity-based children's workbook translating complex financial concepts into accessible lessons, equipping elementary and middle school students with foundational skills in saving, budgeting, entrepreneurship, and financial decision-making, available on Amazon.</p>
+      
     </div>
   </div>
 
@@ -312,49 +316,55 @@ export default function App() {
     <div className="writing-entry-top">
       <span className="writing-entry-date">/2021</span>
       <a className="writing-entry-title" href="https://medium.com/international-junior-economist/the-rise-and-fall-of-toys-r-us-40a188406b2d" target="_blank" rel="noopener noreferrer">The Rise and Fall of Toys 'R' Us</a>
-    </div>
-    <p className="writing-entry-desc">Examining how mounting debt, strategic inertia, leadership instability, and intensifying e-commerce competition transformed Toys “R” Us from a dominant retail innovator into a bankrupt enterprise.</p>
     <span className="writing-entry-tag">Junior Economist</span>
+    </div>
+    <p className="writing-entry-desc">Examining how mounting debt, strategic inertia, leadership instability, and intensifying e-commerce competition transformed Toys "R" Us from a dominant retail innovator into a bankrupt enterprise.</p>
+    
   </div>
   <div className="writing-entry">
     <div className="writing-entry-top">
       <span className="writing-entry-date">/2021</span>
       <a className="writing-entry-title" href="https://medium.com/international-junior-economist/how-businesses-are-taking-advantage-of-tiktok-bc5e2ed70ff" target="_blank" rel="noopener noreferrer">How Businesses Are Taking Advantage of TikTok</a>
+    <span className="writing-entry-tag">Junior Economist</span>
     </div>
     <p className="writing-entry-desc">Examining the strategies businesses are using to leverage TikTok's platform for marketing and brand awareness.</p>
-    <span className="writing-entry-tag">Junior Economist</span>
+    
   </div>
   <div className="writing-entry">
     <div className="writing-entry-top">
       <span className="writing-entry-date">/2022</span>
       <a className="writing-entry-title" href="https://paytonpawprint.com/2022/06/02/fear-escalates-as-violence-continues-to-shake-chicago/" target="_blank" rel="noopener noreferrer">Fear Escalates as Violence Continues to Shake Chicago</a>
+    <span className="writing-entry-tag">Paw Print</span>
     </div>
     <p className="writing-entry-desc">Investigating the growing sense of insecurity among Chicago youth and considers how insufficient mental health resources, pandemic-related strain, and limited preventive measures contribute to persistent urban violence.</p>
-    <span className="writing-entry-tag">Paw Print</span>
+    
   </div>
   <div className="writing-entry">
     <div className="writing-entry-top">
       <span className="writing-entry-date">/2023</span>
       <a className="writing-entry-title" href="https://paytonpawprint.com/2023/02/22/community-groups-look-to-combat-the-traumatic-cycle-of-gun-violence/" target="_blank" rel="noopener noreferrer">Community Groups Look to Combat the Traumatic Cycle of Gun Violence</a>
+    <span className="writing-entry-tag">Paw Print</span>
     </div>
     <p className="writing-entry-desc">Examining the role of community-based initiatives in addressing the root causes of gun violence and supporting those affected by it.</p>
-    <span className="writing-entry-tag">Paw Print</span>
+    
   </div>
   <div className="writing-entry">
     <div className="writing-entry-top">
       <span className="writing-entry-date">/2024</span>
       <a className="writing-entry-title" href="https://yaledailynews.com/articles/yale-through-fresh-eyes" target="_blank" rel="noopener noreferrer">Yale Through Fresh Eyes</a>
-    </div>
-    <p className="writing-entry-desc">Essay offering a candid, humorous reflection on the disorienting yet formative experience of adapting to Yale’s academic, social, and cultural environment as a first-year student.</p>
     <span className="writing-entry-tag">Yale Daily News</span>
+    </div>
+    <p className="writing-entry-desc">Essay offering a candid, humorous reflection on the disorienting yet formative experience of adapting to Yale's academic, social, and cultural environment as a first-year student.</p>
+    
   </div>
   <div className="writing-entry">
     <div className="writing-entry-top">
       <span className="writing-entry-date">/2025</span>
       <a className="writing-entry-title" href="https://yaledailynews.com/articles/winter-break-identity-crisis" target="_blank" rel="noopener noreferrer">The First-Year Winter Break Identity Crisis</a>
+    <span className="writing-entry-tag">Yale Daily News</span>
     </div>
     <p className="writing-entry-desc">Essay exploring the liminal identity of a first-year student whose return home for winter break reveals a growing distance from past relationships and an emerging sense of belonging at Yale.</p>
-    <span className="writing-entry-tag">Yale Daily News</span>
+    
   </div>
 </div>
 </Window>

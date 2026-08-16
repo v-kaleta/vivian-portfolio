@@ -466,12 +466,6 @@ body {
   margin: 0;
 }
 
-@media (max-width: 480px) {
-  .home-body { padding: 40px 20px 36px; }
-  .nav-icon { width: 72px; }
-  .nav-icon-glyph { width: 56px; height: 56px; font-size: 22px; }
-}
-
 @media (max-width: 700px) {
   .skills-columns {
     grid-template-columns: 1fr;
@@ -488,6 +482,27 @@ body {
     position: static;
     display: block;
     margin-top: 2px;
+  }
+
+  .about-header {
+    position: static;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-photo {
+    width: 96px;
+    height: 96px;
+    margin-bottom: 8px;
+  }
+
+  .about-name {
+    font-size: 1.8rem;
+    margin: 0 0 4px;
+  }
+
+  .about-subtitle {
+    font-size: 0.95rem;
   }
 }
 
